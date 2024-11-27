@@ -14,10 +14,6 @@ class WebScraper():
         self.xpath_page_numbers: str = config["xpath"]["page_numbers"]
         self.driver: WebDriver = self.build_chrome_driver(config["chrome_settings"])
         self.wait: WebDriverWait = WebDriverWait(self.driver, timeout=config["webdriver_wait"]["timeout"])
-    
-        self.links: list[str] = self.get_links()
-
-        print(len(self.links))
 
     def build_chrome_driver(self, arguments: list[str]) -> WebDriver:
         options: Options = Options()

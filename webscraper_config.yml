@@ -8,3 +8,4 @@ chrome_settings:
   - "headless"
 webdriver_wait:
   timeout: 10
+dev_settings: "on" #can be on or off
