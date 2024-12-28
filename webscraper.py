@@ -9,8 +9,7 @@ from webbrowser_driver import WebBrowser
 
 class WebScraper:
 
-    def __init__(self, driver: WebDriver, wait: WebDriverWait) -> None:
-        self.driver: WebDriver = driver
+    def __init__(self, wait: WebDriverWait) -> None:
         self.wait: WebDriverWait = wait #WebDriverWait(self.driver, timeout=config["webdriver_wait"]["timeout"])
 
     def get_elements(self, value: str, web_obj: WebDriver | WebElement, by: str = By.XPATH) -> list[WebElement]:

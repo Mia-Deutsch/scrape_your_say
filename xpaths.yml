@@ -1,7 +1,7 @@
 page_numbers: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/app-pagination/ecl-pagination/nav/ul/ecl-pagination-item[6]/a"
-xpaths:
-  links: "//a[@class=\"ecl-u-pt-xs ecl-u-type-none\"]"
-  topics: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/initivative-item/article/a/div[3]/div[2]"
-  type_of_act: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/initivative-item/article/a/div[3]/div[2]"
-  feedback_period: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/initivative-item/article/a/div[5]/div/div[2]"
-  stage_and_feedback_status: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/initivative-item/article/a/div[1]/span/span"
+links: "//a[@class=\"ecl-u-pt-xs ecl-u-type-none\"]"
+topics: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/initivative-item/article/a/div[3]/div[2]"
+type_of_act: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/initivative-item/article/a/div[3]/div[2]"
+feedback_period: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/initivative-item/article/a/div[5]/div/div[2]"
+stage_and_feedback_status: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/initivative-item/article/a/div[1]/span/span"
+boxes: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/initivative-item"
