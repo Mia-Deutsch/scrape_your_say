@@ -4,9 +4,8 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.ui import WebDriverWait
 class MainPage:
-    def __init__(self, xpaths: dict, driver: WebDriver, wait: WebDriverWait, url: str) -> None:
-        #self.main_page_webscraper: MainPageWebScraper = MainPageWebScraper(wait)
-        self.main_page_webscraper: DevWebscraper = DevWebscraper(wait)
+    def __init__(self, xpaths: dict, driver: WebDriver, scraper: MainPageWebScraper | DevWebscraper, url: str) -> None:
+        self.main_page_webscraper: MainPageWebScraper | DevWebscraper = scraper
         self.main_page_boxes: list[dict] = []
         self.xpaths: dict = xpaths
         self.driver: WebDriver = driver

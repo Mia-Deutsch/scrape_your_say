@@ -1,3 +1,4 @@
+from selenium.webdriver.remote.shadowroot import ShadowRoot
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.common.by import By
@@ -15,7 +16,6 @@ class WebScraper:
     def get_elements(self, value: str, web_obj: WebDriver | WebElement, by: str = By.XPATH) -> list[WebElement]:
         self.wait.until(expected_conditions.presence_of_all_elements_located((by, value)))
         elements: list[WebElement] = web_obj.find_elements(by, value)
-
         return elements
 
     def get_element(self, value: str, web_obj: WebDriver | WebElement, by: str = By.XPATH) -> WebElement:
