@@ -1,3 +1,12 @@
 page_numbers: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/app-pagination/ecl-pagination/nav/ul/ecl-pagination-item[6]/a"
 links: ".//a[@class=\"ecl-u-pt-xs ecl-u-type-none\"]"
 boxes: "//*[@id=\"ecl-main-content\"]/div/ng-component/div/section/ux-block-content/div/initivative-item"
+subpage_box: "//*[@id=\"initiative-details\"]/div/div"
+feedback_count: "//*[@id=\"publication-details\"]/div/h2"
+file_box: "//*[@id=\"initiative-attachments\"]/ecl-file/div/div"
+feedback_1_button: "//*[@id=\"publication-details\"]/a"         #maybe href not button
+feedback_2_button: "//*[@id=\"publication-details\"]/div/button"
+statistics_button: "//*[@id=\"myTab\"]/li[2]/h4"
+high_charts: "//*[@class=\"highcharts-container \"]"
+info_by_category: "#{id} > svg > g.highcharts-legend > g > g > g"
+text_by_category: "#{id} > svg > g.highcharts-legend > g > g > g.highcharts-legend-item.highcharts-pie-series.highcharts-color-{index} > text > tspan"

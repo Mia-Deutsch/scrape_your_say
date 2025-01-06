@@ -3,4 +3,4 @@ chrome_settings:
   - "start-maximized"
   - "headless"
 webdriver_wait:
-  timeout: 10
+  timeout: 3

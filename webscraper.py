@@ -24,3 +24,6 @@ class WebScraper:
 
         return element
 
+    def click_element(self, web_obj: WebElement, driver: WebDriver) -> None:
+        self.wait.until(expected_conditions.element_to_be_clickable(web_obj))
+        driver.execute_script("arguments[0].click();", web_obj)
