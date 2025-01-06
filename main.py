@@ -29,7 +29,7 @@ def load_config() -> MainPage:
 
 if __name__ == "__main__":
     driver_config: dict = yaml.safe_load(open("driver_config.yml"))
-    xpaths: dict = yaml.safe_load(open("xpaths.yml"))
+    xpaths: dict = yaml.safe_load(open("webelements_path.yml"))
     webscraper_args: dict = yaml.safe_load(open("webscraper_args.yml"))
 
     driver: WebDriver = WebBrowser(driver_config)

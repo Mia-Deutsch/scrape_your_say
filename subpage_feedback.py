@@ -7,7 +7,7 @@ from selenium.webdriver.remote.webelement import WebElement
 import logging
 
 
-class SubPageFeedbackOne(WebScraper):
+class SubPageFeedback(WebScraper):
     def __init__(self, wait: WebDriverWait, url: str, driver: WebDriver):
         super().__init__(wait)
         self.url = url
@@ -35,7 +35,7 @@ class SubPageFeedbackOne(WebScraper):
             self.logger.warning(timeout_exception)
             return "", ""
 
-    def get_by_category_respondent(self, selector: str, element_id: str) -> list[WebElement]:
+    def get_webelelement_list_with_dynamic_selector(self, selector: str, element_id: str) -> list[WebElement]:
         elements: list[WebElement] = []
         css_selector: str = selector.format(id=element_id)
         try:
@@ -50,7 +50,7 @@ class SubPageFeedbackOne(WebScraper):
         element_id: str = self.get_id(xpath_id)[0]
         if not element_id: return data_feedback_one
 
-        elements: list[WebElement] = self.get_by_category_respondent(selector, element_id)
+        elements: list[WebElement] = self.get_webelelement_list_with_dynamic_selector(selector, element_id)
         if not elements: return data_feedback_one
         text_elements: list[WebElement] = []
 
@@ -75,3 +75,19 @@ class SubPageFeedbackOne(WebScraper):
 
         return data_feedback_one
 
+
+    def get_data_by_country_respondent(self, xpath_id: str, selector: str, selector_text: str) -> dict:
+        data_feedback_by_country: dict = {}
+        element_id: str = self.get_id(xpath_id)[1]
+        if not element_id: return data_feedback_by_country
+
+        countries: list[WebElement] = []
+        [countries.append(country) for country in self.get_webelelement_list_with_dynamic_selector(selector, element_id)]
+        for index, country in enumerate(countries):
+            try:
+                new_selector: str = selector_text.format(id=element_id, index=index+1)
+                data_feedback_by_country[country.text] = self.get_element(new_selector, self.driver, By.CSS_SELECTOR).text
+            except TimeoutException as timeout_exception:
+                self.logger.warning(timeout_exception)
+
+        return data_feedback_by_country
