@@ -1,3 +1,5 @@
+from logging import Logger
+
 from selenium.common import NoSuchElementException, TimeoutException, ElementClickInterceptedException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
@@ -5,14 +7,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from webscraper import WebScraper
 from selenium.webdriver.remote.webelement import WebElement
 import logging
+import time
 
 
 class SubPageFeedback(WebScraper):
     def __init__(self, wait: WebDriverWait, url: str, driver: WebDriver):
         super().__init__(wait)
-        self.url = url
-        self.driver = driver
-        self.logger = logging.getLogger(__name__)
+        self.url: str = url
+        self.driver: WebDriver = driver
+        self.logger: Logger = logging.getLogger(__name__)
 
 
     def click_statistics_button(self, xpath: str) -> int:
@@ -86,6 +89,7 @@ class SubPageFeedback(WebScraper):
         for index, country in enumerate(countries):
             try:
                 new_selector: str = selector_text.format(id=element_id, index=index+1)
+                time.sleep(0.5)
                 data_feedback_by_country[country.text] = self.get_element(new_selector, self.driver, By.CSS_SELECTOR).text
             except TimeoutException as timeout_exception:
                 self.logger.warning(timeout_exception)

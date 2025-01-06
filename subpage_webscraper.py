@@ -27,8 +27,8 @@ class SubpageWebscraper(WebScraper):
                 if subpage_element.text == "Category":
                     return subpage_box[index+1].text
             return ""
-        except TimeoutException:
-            self.logger.warning("No info box found")
+        except TimeoutException as timout_exception:
+            self.logger.warning(timout_exception)
             return "NoSuchElementException"
 
     def get_document_names(self, xpath: str) -> list[str]:
