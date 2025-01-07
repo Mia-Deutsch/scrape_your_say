@@ -1,0 +1,291 @@
+State aid in the aviation sector Commission guidelines on airports and airlines revision:
+  feedback_one:
+    by_category_respondent:
+      Business association: 12
+      Company/business: 26
+      Consumer organisation: 1
+      EU citizen: 16
+      Environmental organisation: 1
+      Non-governmental organisation (NGO): 5
+      Other: 2
+      Public authority: 13
+      Trade union: 1
+    by_country_respondent:
+      Australia: 1
+      Austria: 2
+      Belgium: 5
+      Brazil: 1
+      Bulgaria: 1
+      Czechia: 1
+      Denmark: 4
+      France: 17
+      Germany: 15
+      Hungary: 1
+      Ireland: 4
+      Italy: 6
+      Latvia: 1
+      Netherlands: 2
+      Norway: 1
+      Poland: 5
+      Portugal: 1
+      Reunion: 1
+      Spain: 1
+      Sweden: 6
+      United Kingdom: 1
+  feedback_two:
+    by_category_respondent:
+      Company/business: 1
+      Consumer organisation: 1
+      EU citizen: 3
+    by_country_respondent:
+      Germany: 2
+      Portugal: 1
+      Romania: 1
+      Slovakia: 1
+  main_page:
+    link: https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13915-State-aid-in-the-aviation-sector-Commission-guidelines-on-airports-and-airlines-revision-_en
+    more_infos: cant be scraped rn
+  sub_page:
+    amount_feedback_one: 77
+    category: REFIT
+    file_name:
+    - !!python/tuple
+      - Call for evidence for an impact assessment
+      - Ares(2024)6063603
+    - !!python/tuple
+      - Draft implementing regulation
+      - Ares(2024)9099429
+    - !!python/tuple
+      - Draft implementing regulation
+      - Ares(2024)8901461
+    - !!python/tuple
+      - Annex
+      - Ares(2024)8901461
+    - !!python/tuple
+      - Call for evidence for an impact assessment
+      - Ares(2022)478559
+    - !!python/tuple
+      - Proposal for a directive
+      - COM(2023)445
+    - !!python/tuple
+      - Annex
+      - COM(2023)445
+    - !!python/tuple
+      - Summary of the impact assessment report
+      - SWD(2023)446
+    - !!python/tuple
+      - Impact assessment report
+      - SWD(2023)445
+    - !!python/tuple
+      - Opinion on impact assessment
+      - SEC(2023)445
+    - !!python/tuple
+      - Staff working document
+      - SWD(2023)447
+Performance of pharmacovigilance activities for human medicines update of Implementing Regulation EU 520 2012:
+  feedback_one:
+    by_category_respondent:
+      EU citizen: 2
+      Environmental organisation: 1
+    by_country_respondent:
+      France: 1
+      Slovakia: 1
+      Sweden: 1
+  feedback_two: {}
+  main_page:
+    link: https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13195-Performance-of-pharmacovigilance-activities-for-human-medicines-update-of-Implementing-Regulation-EU-520-2012-_en
+    more_infos: cant be scraped rn
+  sub_page:
+    amount_feedback_one: 3
+    category: ''
+    file_name:
+    - !!python/tuple
+      - Call for evidence for an impact assessment
+      - Ares(2024)6063603
+    - !!python/tuple
+      - Draft implementing regulation
+      - Ares(2024)9099429
+    - !!python/tuple
+      - Draft implementing regulation
+      - Ares(2024)8901461
+    - !!python/tuple
+      - Annex
+      - Ares(2024)8901461
+    - !!python/tuple
+      - Call for evidence for an impact assessment
+      - Ares(2022)478559
+    - !!python/tuple
+      - Proposal for a directive
+      - COM(2023)445
+    - !!python/tuple
+      - Annex
+      - COM(2023)445
+    - !!python/tuple
+      - Summary of the impact assessment report
+      - SWD(2023)446
+    - !!python/tuple
+      - Impact assessment report
+      - SWD(2023)445
+    - !!python/tuple
+      - Opinion on impact assessment
+      - SEC(2023)445
+    - !!python/tuple
+      - Staff working document
+      - SWD(2023)447
+Measures related to the containment of specific plant pests Grapevine flavescence:
+  feedback_one: {}
+  feedback_two: {}
+  main_page:
+    link: https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14465-Measures-related-to-the-containment-of-specific-plant-pests-Grapevine-flavescence-doree_en
+    more_infos: cant be scraped rn
+  sub_page:
+    amount_feedback_one: 0
+    category: ''
+    file_name:
+    - !!python/tuple
+      - Call for evidence for an impact assessment
+      - Ares(2024)6063603
+    - !!python/tuple
+      - Draft implementing regulation
+      - Ares(2024)9099429
+    - !!python/tuple
+      - Draft implementing regulation
+      - Ares(2024)8901461
+    - !!python/tuple
+      - Annex
+      - Ares(2024)8901461
+    - !!python/tuple
+      - Call for evidence for an impact assessment
+      - Ares(2022)478559
+    - !!python/tuple
+      - Proposal for a directive
+      - COM(2023)445
+    - !!python/tuple
+      - Annex
+      - COM(2023)445
+    - !!python/tuple
+      - Summary of the impact assessment report
+      - SWD(2023)446
+    - !!python/tuple
+      - Impact assessment report
+      - SWD(2023)445
+    - !!python/tuple
+      - Opinion on impact assessment
+      - SEC(2023)445
+    - !!python/tuple
+      - Staff working document
+      - SWD(2023)447
+Commercial vehicles weights and dimensions evaluation:
+  feedback_one:
+    by_category_respondent:
+      Academic/research Institution: 2
+      Business association: 84
+      Company/business: 88
+      Consumer organisation: 2
+      EU citizen: 28
+      Non-EU citizen: 1
+      Non-governmental organisation (NGO): 5
+      Other: 4
+      Public authority: 7
+      Trade union: 3
+    by_country_respondent:
+      Austria: 18
+      Belgium: 46
+      Czechia: 3
+      Denmark: 5
+      Finland: 8
+      France: 18
+      Germany: 57
+      Hungary: 2
+      Ireland: 1
+      Italy: 5
+      Lithuania: 1
+      Luxembourg: 3
+      Netherlands: 6
+      Norway: 2
+      Poland: 11
+      Slovakia: 13
+      Slovenia: 1
+      Somalia: 1
+      Spain: 12
+      Sweden: 10
+      United Kingdom: 1
+  feedback_two:
+    by_category_respondent:
+      Business association: 53
+      Company/business: 53
+      Consumer organisation: 1
+      EU citizen: 3
+      Non-EU citizen: 1
+      Non-governmental organisation (NGO): 3
+      Other: 6
+      Public authority: 9
+      Trade union: 3
+    by_country_respondent:
+      Austria: 11
+      Belarus: 1
+      Belgium: 29
+      Canada: 1
+      Czechia: 2
+      Denmark: 2
+      Estonia: 1
+      Finland: 7
+      France: 19
+      Germany: 19
+      Greece: 1
+      Hungary: 3
+      Ireland: 1
+      Italy: 3
+      Luxembourg: 3
+      Netherlands: 5
+      Norway: 1
+      Poland: 1
+      Portugal: 1
+      Romania: 1
+      Slovakia: 1
+      Slovenia: 1
+      Spain: 6
+      Sweden: 7
+      Switzerland: 3
+      Tuerkiye: 1
+      United Kingdom: 1
+  main_page:
+    link: https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13278-Commercial-vehicles-weights-and-dimensions-evaluation-_en
+    more_infos: cant be scraped rn
+  sub_page:
+    amount_feedback_one: 224
+    category: Commission Work Programme, Conference on the Future of Europe
+    file_name:
+    - !!python/tuple
+      - Call for evidence for an impact assessment
+      - Ares(2024)6063603
+    - !!python/tuple
+      - Draft implementing regulation
+      - Ares(2024)9099429
+    - !!python/tuple
+      - Draft implementing regulation
+      - Ares(2024)8901461
+    - !!python/tuple
+      - Annex
+      - Ares(2024)8901461
+    - !!python/tuple
+      - Call for evidence for an impact assessment
+      - Ares(2022)478559
+    - !!python/tuple
+      - Proposal for a directive
+      - COM(2023)445
+    - !!python/tuple
+      - Annex
+      - COM(2023)445
+    - !!python/tuple
+      - Summary of the impact assessment report
+      - SWD(2023)446
+    - !!python/tuple
+      - Impact assessment report
+      - SWD(2023)445
+    - !!python/tuple
+      - Opinion on impact assessment
+      - SEC(2023)445
+    - !!python/tuple
+      - Staff working document
+      - SWD(2023)447

@@ -4,7 +4,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 
 class SubPage:
-    def __new__(cls, wait: WebDriverWait, url: str, driver: WebDriver, xpaths: dict):
+    def __new__(cls, wait: WebDriverWait, url: str, driver: WebDriver, xpaths: dict) -> tuple[dict, dict, dict]:
         instance: SubPage = super().__new__(cls)
         subpage_scraper: SubpageWebscraper = SubpageWebscraper(wait, url, driver)
         driver.get(url)
@@ -18,7 +18,7 @@ class SubPage:
             feedback_one: SubPageFeedback = SubPageFeedback(wait, link_feedback_one, driver)
             feedback_one.driver.get(link_feedback_one)
             if feedback_one.click_statistics_button(xpaths["statistics_button"]):
-                feedback_one_data: dict = feedback_one.get_data_by_category_respondent(xpaths["high_charts"], xpaths["info_by_category"], xpaths["text_by_category"])
+                feedback_one_data: dict = instance.get_feedback_infos(xpaths, feedback_one)
                 for key, value in feedback_one_data.items():
                     subpage_feedback_one[key] = value
 
@@ -26,7 +26,7 @@ class SubPage:
         link_feedback_two: str = subpage_scraper.click_button_feedback_2(xpaths["feedback_2_button"])
         if link_feedback_two:
             feedback_two: SubPageFeedback = SubPageFeedback(wait, link_feedback_two, driver)
-            feedback_two_data: dict = feedback_two.get_data_by_country_respondent(xpaths["high_charts"], xpaths["text_by_country_list"], xpaths["text_by_country"])
+            feedback_two_data: dict = instance.get_feedback_infos(xpaths, feedback_two)
             for key, value in feedback_two_data.items():
                 subpage_feedback_two[key] = value
 
@@ -42,11 +42,13 @@ class SubPage:
                 "amount_feedback_one": amount_feedback
                 }
 
-    def get_feedback_infos(self, xpaths: dict, subpage_feedback: SubPageFeedback, data: dict) -> dict:
+    def get_feedback_infos(self, xpaths: dict, subpage_feedback: SubPageFeedback) -> dict:
         feedback: dict = dict()
+        data_category: dict = subpage_feedback.get_data_by_category_respondent(xpaths["high_charts"], xpaths["info_by_category"], xpaths["text_by_category"])
 
-        for key, value in data.items():
-            feedback[key] = value
+        data_country: dict = subpage_feedback.get_data_by_country_respondent(xpaths["high_charts"], xpaths["text_by_country_list"], xpaths["text_by_country"])
+        feedback["by_category_respondent"] = data_category
+        feedback["by_country_respondent"] = data_country
 
         return feedback
         #subpage_feedback.get_data_by_country_respondent(xpaths["high_charts"], xpaths["text_by_country_list"], xpaths["text_by_country"])
