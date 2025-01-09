@@ -1,7 +1,6 @@
 from webscraper import WebScraper
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
-from dev_webscraper import DevWebscraper
 from mainpage import MainPage
 from webbrowser_driver import WebBrowser
 from mainpage_webscraper import MainPageWebScraper

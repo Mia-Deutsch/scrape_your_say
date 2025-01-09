@@ -10,7 +10,6 @@ class MainPageWebScraper(WebScraper):
         super().__init__(wait)
         self.logger: logging.Logger = logging.getLogger(__name__)
 
-
     def get_text(self, key: str, box_infos: list[str]) -> str:
         for index, info in enumerate(box_infos):
             if info == key:

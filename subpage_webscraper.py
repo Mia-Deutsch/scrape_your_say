@@ -1,4 +1,4 @@
-from selenium.common import NoSuchElementException, TimeoutException, ElementClickInterceptedException
+from selenium.common import TimeoutException, ElementClickInterceptedException
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 from webscraper import WebScraper
@@ -29,7 +29,7 @@ class SubpageWebscraper(WebScraper):
             return ""
         except TimeoutException as timout_exception:
             self.logger.warning(timout_exception)
-            return "NoSuchElementException"
+            return "THIS WAS NOT SUPPOSED TO HAPPEN"
 
     def get_document_names(self, xpath: str) -> list[str]:
         document_names: list[str] = []
@@ -51,7 +51,6 @@ class SubpageWebscraper(WebScraper):
             return ""
         except TimeoutException:
             return ""
-
 
     def get_href_feedback_1(self, xpath: str) -> str:
         try:

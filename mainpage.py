@@ -1,11 +1,10 @@
 from mainpage_webscraper import MainPageWebScraper
-from dev_webscraper import DevWebscraper
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.support.ui import WebDriverWait
+
 class MainPage:
-    def __init__(self, xpaths: dict, driver: WebDriver, scraper: MainPageWebScraper | DevWebscraper, url: str) -> None:
-        self.main_page_webscraper: MainPageWebScraper | DevWebscraper = scraper
+    def __init__(self, xpaths: dict, driver: WebDriver, scraper: MainPageWebScraper, url: str) -> None:
+        self.main_page_webscraper: MainPageWebScraper = scraper
         self.main_page_boxes: list[dict] = []
         self.xpaths: dict = xpaths
         self.driver: WebDriver = driver

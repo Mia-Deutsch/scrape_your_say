@@ -31,7 +31,6 @@ class SubPage:
                 subpage_feedback_two[key] = value
             subpage_feedback_two["amount_feedback_two"] = feedback_two.get_amount_feedback_two(xpaths["amount_feedback_two"])
 
-        #instance.subpage_all_infos: tuple[dict, dict, dict] = (subpage_infos, subpage_feedback_one, subpage_feedback_two)
         return subpage_infos, subpage_feedback_one, subpage_feedback_two
 
     def get_subpage(self, xpaths: dict, subpage_scraper: SubpageWebscraper) -> dict:
@@ -52,4 +51,3 @@ class SubPage:
         feedback["by_country_respondent"] = data_country
 
         return feedback
-        #subpage_feedback.get_data_by_country_respondent(xpaths["high_charts"], xpaths["text_by_country_list"], xpaths["text_by_country"])
