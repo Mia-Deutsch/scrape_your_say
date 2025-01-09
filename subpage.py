@@ -29,6 +29,7 @@ class SubPage:
             feedback_two_data: dict = instance.get_feedback_infos(xpaths, feedback_two)
             for key, value in feedback_two_data.items():
                 subpage_feedback_two[key] = value
+            subpage_feedback_two["amount_feedback_two"] = feedback_two.get_amount_feedback_two(xpaths["amount_feedback_two"])
 
         #instance.subpage_all_infos: tuple[dict, dict, dict] = (subpage_infos, subpage_feedback_one, subpage_feedback_two)
         return subpage_infos, subpage_feedback_one, subpage_feedback_two
@@ -45,8 +46,8 @@ class SubPage:
     def get_feedback_infos(self, xpaths: dict, subpage_feedback: SubPageFeedback) -> dict:
         feedback: dict = dict()
         data_category: dict = subpage_feedback.get_data_by_category_respondent(xpaths["high_charts"], xpaths["info_by_category"], xpaths["text_by_category"])
-
         data_country: dict = subpage_feedback.get_data_by_country_respondent(xpaths["high_charts"], xpaths["text_by_country_list"], xpaths["text_by_country"])
+
         feedback["by_category_respondent"] = data_category
         feedback["by_country_respondent"] = data_country
 

@@ -12,6 +12,7 @@ class MainPage:
         self.url: str = url
 
     def scrape_boxes(self):
+        self.driver.get(self.url)
 
         amount_pages: int = self.main_page_webscraper.get_amount_pages(xpath=self.xpaths["page_numbers"], driver=self.driver)
         dynamic_url: str = self.url

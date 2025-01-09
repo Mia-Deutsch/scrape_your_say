@@ -14,8 +14,8 @@ class DataHandler:
         return title
 
     def prettify_file_names(self) -> None:
-        filename_list: list[tuple[str, str]] = []
         for index, item in enumerate(self.data):
+            filename_list: list[tuple[str, str]] = []
             for name in item[1]["file_name"]:
                 filename_list.append((name.split("-")[0][0:-1], name.split("\n")[0].split("-")[1][1::]))
             self.data[index][1]["file_name"] = filename_list

@@ -33,7 +33,16 @@ class SubPageFeedback(WebScraper):
     def get_id(self, xpath: str) -> tuple[str, str]:
         try:
             elements: list[WebElement] = self.get_elements(xpath, self.driver)
-            return elements[0].get_attribute("id"), elements[1].get_attribute("id")
+
+            by_category: str = elements[0].get_attribute("id")
+
+            try:
+                by_country: str = elements[1].get_attribute("id")
+            except IndexError:
+                by_country: str = ""
+
+            return by_category, by_country
+
         except TimeoutException as timeout_exception:
             self.logger.warning(timeout_exception)
             return "", ""
@@ -95,3 +104,11 @@ class SubPageFeedback(WebScraper):
                 self.logger.warning(timeout_exception)
 
         return data_feedback_by_country
+
+    def get_amount_feedback_two(self, xpath: str) -> int:
+        try:
+            amount: str = self.get_element(xpath, self.driver).text
+            return int(amount.split(":")[1])
+        except TimeoutException as timeout_exception:
+            self.logger.warning(timeout_exception)
+            return 0
