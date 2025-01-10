@@ -18,7 +18,7 @@ git clone https://github.com/Mia-Deutsch/scrape_your_say.git
 ```
 2. Install dependencies:
 ```bash
-pip3 install -r requirements.txt
+pip install selenium
 ```
 
 ## usage
